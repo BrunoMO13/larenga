@@ -13,7 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
+    <!--animacion de las imagenes-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--favicon-->
     <link rel="shortcut icon" href="../img/general/favicon3.png" type="image/x-icon" />
     <title>La Renga - Eventos</title>
     <link rel="stylesheet" href="../css/style.css" />
@@ -39,10 +41,10 @@
     <main>
         <h1>EVENTOS</h1>
         <section class="eventos__contenido">
-            <img src="../img/Evento/eventoNoviembre.jpg" alt="eventonoviembre" />
-            <img src="../img/Evento/eventoOctubre.jpg" alt="eventooctubre" />
-            <img src="../img/Evento/eventoAgosto.jpg" alt="eventoagosto" />
-            <img src="../img/Evento/eventoAbril.jpg" alt="eventoAbril" />
+            <img data-aos="zoom-out" src="../img/Evento/eventoNoviembre.jpg" alt="eventonoviembre" />
+            <img data-aos="zoom-out" src="../img/Evento/eventoOctubre.jpg" alt="eventooctubre" />
+            <img data-aos="zoom-out" src="../img/Evento/eventoAgosto.jpg" alt="eventoagosto" />
+            <img data-aos="zoom-out" src="../img/Evento/eventoAbril.jpg" alt="eventoAbril" />
         </section>
     </main>
     <footer>
@@ -52,6 +54,10 @@
             <li><a href="https://youtube.com/larenga">YouTube</a></li>
         </ul>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
