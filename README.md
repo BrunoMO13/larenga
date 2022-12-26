@@ -1,4 +1,4 @@
 ## Proyecto Final de Desarrollo Web
-# LA Renga
+# La Renga
 
 por: Bruno Mora Olmedo.
