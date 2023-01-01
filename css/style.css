@@ -19,9 +19,13 @@ header {
     margin: auto;
 }
 
+.encabezado__lista {
+    margin-bottom: 0px;
+}
+
 .encabezado__lista li:hover {
-    transform: translateY(-10PX)
-        /*al pasar con el cursor por encima se desplaza 10px hacia arriba (-Y)*/
+    transform: translateY(-10PX);
+    /*al pasar con el cursor por encima se desplaza 10px hacia arriba (-Y)*/
 }
 
 .encabezado__logo {
@@ -29,16 +33,17 @@ header {
     /*ancho de la imagen del nav */
     height: 100px;
     /*altura de la imagen del nav */
-animation: ease-in agrandar 0.5s;
+    animation: ease-in agrandar 0.5s;
 }
 
 @keyframes agrandar {
-    0%{
+    0% {
         transform: scale(0);
     }
- 100%{
-    transform: scale(1);
- }   
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .encabezado__logo:hover {
@@ -53,13 +58,15 @@ animation: ease-in agrandar 0.5s;
     /*altura de la imagen del nav */
     animation: ease-in agrandar 0.5s;
 }
+
 @keyframes agrandar {
-    0%{
+    0% {
         transform: scale(0);
     }
- 100%{
-    transform: scale(1);
- }   
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .encabezado__logo-arte:hover {
@@ -67,26 +74,47 @@ animation: ease-in agrandar 0.5s;
     /*al pasar con el cursor por encima se agranda*/
 }
 
-ul {
-    display: flex;
-    /*le aplico flex para que convierta a las palabras en bloque y las acomode horizontal*/
-}
-
-ul li a {
-    text-decoration: none;
-    /*le quita el subrayado a los link*/
-    color: white;
-    /*color de las letras del nav*/
-}
-
 ul li {
     list-style: none;
     /*Le quita los puntos de adelante a la lista*/
-    font-size: 2rem;
+    font-size: 1.3rem;
     margin: 0px 10px;
     /*posiscion de las latras en el nav*/
     font-family: 'Yantramanav', sans-serif;
     /*tipo de letra del nav, la fuente esta en el head*/
+}
+
+.navbar {
+    width: 100%;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link-tienda {
+    color: goldenrod;
+}
+
+.nav-item {
+    font-family: 'Yantramanav', sans-serif;
+    /*tipo de letra del nav, la fuente esta en el head*/
+    font-weight: bold
+}
+
+.nav-link:hover {
+    color: white;
+    transform: translateY(-10PX);
+    /*al pasar con el cursor por encima se desplaza 10px hacia arriba (-Y)*/
+}
+
+.nav-link-tienda:hover {
+    color: goldenrod;
+}
+
+.navbar-collapse {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 body {
@@ -111,13 +139,30 @@ footer {
     font-family: 'Yantramanav', sans-serif;
 }
 
+ul {
+    display: flex;
+    /*le aplico flex para que convierta a las palabras en bloque y las acomode horizontal*/
+}
+
+ul li a {
+    text-decoration: none;
+    /*le quita el subrayado a los link*/
+    color: white;
+    /*color de las letras del nav*/
+}
+
 .piePagina {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     max-width: 1200px;
     margin: auto;
 
+}
+
+.bi:hover {
+    color: goldenrod;
+    /*al pasar con el cursor por encima se pone de color amarillo*/
 }
 
 /*inicio*/
@@ -187,7 +232,8 @@ footer {
 }
 
 .galeria__contenido-imagenes img:hover {
-    transform: scale(1.1);/*al pasar con el cursor por encima se agranda*/
+    transform: scale(1.1);
+    /*al pasar con el cursor por encima se agranda*/
 }
 
 .galeria-texto {
@@ -329,11 +375,23 @@ h2 {
     gap: 20px;
 }
 
-.whatsapp {
+.bi-whatsapp {
     position: fixed;
     /*posiciona al elemento dentro del viewport*/
-    bottom: 81px;
-    right: 20px;
+    height: 50px;
+    width: 50px;
+    bottom: 45px;
+    right: 30px;
+    background-color: #0df053;
+    color: #ffff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.bi-whatsapp:hover {
+    background-color: #ffff;
+    color: #0df053;
 }
 
 /* los media quieries van siempre al final de CSS */
@@ -359,7 +417,7 @@ h2 {
 
     /*footer*/
     .piePagina {
-        justify-content: space-evenly;
+        justify-content: center;
         /*para que quede centrado*/
     }
 
