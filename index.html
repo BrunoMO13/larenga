@@ -30,7 +30,7 @@
     <header>
         <div class="encabezado">
             <!-- encabezado -->
-            <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <nav class="navbar navbar-expand-md " data-bs-theme="dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="./index.html"><img class="encabezado__logo"
                             src="./img/inicio/nav/logonav2.png" alt="logonav"></a>
@@ -65,7 +65,29 @@
     <main>
         <h1>¡BIENVENIDOS!</h1>
         <section class="inicio-img">
-            <img src="./img/portada1.jpg" alt="larenga1">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="./img/portada1.jpg" class="d-block w-100" alt="larenga1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/portadajpg.jpg" class="d-block w-100" alt="larenga2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/la-renga-la-plata.jpg" class="d-block w-100" alt="larenga2">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
         </section>
     </main>
     <section>
@@ -74,16 +96,20 @@
         </P>
         <div class="inicio-video">
             <article class="inicio-video-contenido">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ofFrAoe8im0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ofFrAoe8im0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
             </article>
             <article class="inicio-video-contenido">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/AGctj_YLCQk"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AGctj_YLCQk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </article>
         </div>
     </section>

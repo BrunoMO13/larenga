@@ -1,0 +1,73 @@
+/*tienda*/
+.producto__contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+    gap: 20px;
+
+    &-tarjeta {
+        background-color: rgb(230, 225, 225);
+        border-radius: 10px;
+        padding: 20px;
+        height: 650px;
+        width: 400px;
+    }
+}
+
+.tarjeta {  
+    position: relative;
+    /*posicionado desde el contenedor padre. se aplica al padre*/
+    display: flex;
+    justify-content: center;
+
+
+    &__contenido-titulo {
+        font-family: 'Yantramanav', sans-serif;
+        font-size: 1.5rem;
+        background-color: #14B76E;
+        opacity: 0.8;
+        border-radius: 5px;
+        padding: 10px;
+        position: absolute;
+        /*posiciona desde el contenedor hijo. se aplica al hijo*/
+        right: 0;
+        /*posicionado a la derecha. Tambien se puede colocar arriba:top, abajo:bottom o izquierda:left*/
+    }
+
+    &__contenido-imagen {
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+    }
+
+    &__contenido-descripcion {
+        margin-bottom: 5px;
+        font-family: 'Yantramanav', sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+.tarjeta__enlace {
+    text-decoration: none;
+    font-family: 'Yantramanav', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    background-color: goldenrod;
+    display: block;
+    /*lo convierte en linea para ocupar todo el espacio de su contenedor */
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 0;
+    height: 56px;
+    width: 360px;
+}
+
+.tarjeta__contenido_back {
+    display: grid;
+    height: auto;
+    width: auto;
+}

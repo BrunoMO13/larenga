@@ -1,0 +1,14 @@
+/*eventos*/
+.eventos__contenido {
+    display: flex;
+    flex-wrap: wrap;
+    /*ajusta el contenido a tamaño de la pantalla*/
+    justify-content: center;
+
+    /*alinea el contenido en el centro*/
+    img {
+        width: 50%;
+        height: 50%;
+        margin: 10px;
+    }
+}

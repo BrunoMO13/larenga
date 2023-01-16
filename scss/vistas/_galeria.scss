@@ -1,0 +1,33 @@
+/*galeria*/
+.galeria__contenido {
+    background-color: #929191;
+}
+
+.galeria__contenido-imagenes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(2);
+            /*al pasar con el cursor por encima se agranda*/
+        }
+    }
+}
+
+.galeria-texto {
+    color: white;
+    background: black;
+    padding: 10px;
+    margin: 10px 0px;
+}

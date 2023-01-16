@@ -1,0 +1,34 @@
+/*footer*/
+footer {
+    background-color: black;
+    color: white;
+    margin: 20px 0px 0px 0px;
+    padding: 20px;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+ul {
+    display: flex;
+    /*le aplico flex para que convierta a las palabras en bloque y las acomode horizontal*/
+}
+
+ul li a {
+    text-decoration: none;
+    /*le quita el subrayado a los link*/
+    color: white;
+    /*color de las letras del nav*/
+}
+
+.piePagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.bi:hover {
+    color: $fontYellow;
+    /*al pasar con el cursor por encima se pone de color amarillo*/
+}
