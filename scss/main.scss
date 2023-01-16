@@ -1,0 +1,16 @@
+//variables:van siempre al principio
+@import "componentes/variables";
+
+//componentes
+@import "componentes/global";
+@import "componentes/header";
+@import "componentes/footer";
+
+//vistas
+@import "vistas/hindex";
+@import "vistas/eventos";
+@import "vistas/galeria";
+@import "vistas/contacto";
+@import "vistas/tienda";
+
+@import "style";

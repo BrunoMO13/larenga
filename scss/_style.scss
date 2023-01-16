@@ -1,0 +1,151 @@
+/* los media quieries van siempre al final de CSS */
+/*si trabajamos como mobile last el media queries que se una es max-width*/
+/*los media quieries se trabajan de mayor a menor en mobile last*/
+
+@media only screen and (max-width:$bpSmall) {
+
+    /*header*/
+    .encabezado {
+        flex-direction: column;
+        /*acomoda el columna para que queda uno debajo del otro*/
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    .encabezado__logo {
+        height: 150px;
+        width: 150px;
+    }
+
+    .navbar-toggler {
+        border: solid white 1px;
+    }
+
+    ul li {
+        font-size: 1.3rem;
+    }
+
+    /*footer*/
+    .piePagina {
+        justify-content: center;
+        /*para que quede centrado*/
+    }
+
+    /*inicio*/
+    .inicio-img {
+        padding: 0px 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .inicio-video {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        &-contenido iframe {
+            padding: 0 20px;
+        }
+    }
+
+    /*eventos*/
+    .eventos__contenido img {
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+    }
+
+    /*galeria*/
+    .galeria__contenido-imagenes {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        padding: 20px 20px;
+    }
+
+    /*tienda*/
+    .producto__contenido {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .whatsapp {
+        bottom: 45px;
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width:$bpMedium) {
+
+    /*header*/
+    .encabezado {
+        flex-direction: column;
+
+        /*acomoda el columna para que queda uno debajo del otro*/
+        &__logo {
+            height: 150px;
+            width: 150px;
+        }
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    .navbar-toggler {
+        border: solid white 1px;
+    }
+
+    ul li {
+        font-size: 1.3rem;
+    }
+
+    /*footer*/
+    .piePagina {
+        justify-content: center;
+        /*para que quede centrado*/
+    }
+
+    /*inicio*/
+    .inicio-img {
+        padding: 0px 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .inicio-video {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    &-contenido iframe {
+        padding: 0 20px;
+    }}
+
+    /*eventos*/
+    .eventos__contenido img {
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+    }
+
+    /*galeria*/
+    .galeria__contenido-imagenes {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        padding: 20px 20px;
+
+        & img:hover {
+            transform: scale(1);
+        }
+    }
+
+    /*tienda*/
+    .producto__contenido {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .whatsapp {
+        bottom: 45px;
+        right: 20px;
+    }
+}

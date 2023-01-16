@@ -1,0 +1,140 @@
+/*header*/
+header {
+    background-color: black;
+}
+
+.encabezado {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+
+    &__lista {
+        margin-bottom: 0px;
+    }
+
+    &__lista li:hover {
+        transform: translateY(-10PX);
+        /*al pasar con el cursor por encima se desplaza 10px hacia arriba (-Y)*/
+    }
+
+    &__logo {
+        width: 100px;
+        /*ancho de la imagen del nav */
+        height: 100px;
+        /*altura de la imagen del nav */
+        animation: ease-in agrandar 0.5s;
+        transition:0.3s;
+
+        &-arte {
+            width: 200px;
+            /*ancho de la imagen del nav */
+            height: 100px;
+            /*altura de la imagen del nav */
+            animation: ease-in agrandar 0.5s;
+            transition:0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+                /*al pasar con el cursor por encima se agranda*/
+
+                @keyframes agrandar {
+                    0% {
+                        transform: scale(0);
+                    }
+
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    &__logo:hover {
+        transform: scale(1.2);
+
+        /*al pasar con el cursor por encima se agranda*/
+        @keyframes agrandar {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+ul li {
+    list-style: none;
+    /*Le quita los puntos de adelante a la lista*/
+    font-size: 1.3rem;
+    margin: 0px 10px;
+    /*posiscion de las latras en el nav*/
+    font-family: 'Yantramanav', sans-serif;
+    /*tipo de letra del nav, la fuente esta en el head*/
+}
+
+.navbar {
+    width: 100%;
+
+    &-collapse {
+        display: flex;
+        flex-direction: row-reverse;
+        }
+}
+
+.nav-link {
+    color: white;
+    transition:0.3s;
+
+    &-tienda {
+        color: $fontYellow;
+
+        &:hover {
+            color: $fontYellow;
+        }
+    }
+
+    &:hover {
+        color: white;
+        transform: translateY(-10PX);
+        /*al pasar con el cursor por encima se desplaza 10px hacia arriba (-Y)*/
+    }
+
+
+    &-tienda {
+        color: goldenrod;
+
+
+        &:hover {
+            color: goldenrod;
+        }
+    }
+}
+
+.nav-item {
+    font-family: 'Yantramanav', sans-serif;
+    /*tipo de letra del nav, la fuente esta en el head*/
+    font-weight: bold
+}
+
+body {
+    background-color: rgb(77, 75, 75);
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: $fontYellow;
+    margin: 20px 0;
+}

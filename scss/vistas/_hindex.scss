@@ -1,0 +1,51 @@
+/*inicio*/
+
+.inicio-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    max-width: 1200px;
+    height: 100%;
+    padding: 10PX;
+    margin: 10px auto;
+}
+
+.inicio-video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 10px auto;
+
+    &-contenido {
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        max-width: 1200px;
+        margin: 10px auto;
+    }
+}
+
+.bi-whatsapp {
+    position: fixed;
+    /*posiciona al elemento dentro del viewport*/
+    height: 50px;
+    width: 50px;
+    bottom: 45px;
+    right: 30px;
+    background-color: #0df053;
+    color: #ffff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.3s;
+    z-index: 100;
+
+    &:hover {
+        background-color: #ffff;
+        color: #0df053;
+    }
+}

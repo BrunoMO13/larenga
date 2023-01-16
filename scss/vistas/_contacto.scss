@@ -1,0 +1,56 @@
+/*contacto*/
+form {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto {
+    &__formulario {
+        font-family: 'Roboto', sans-serif;
+        background-color: black;
+        color: white;
+        text-align: center;
+
+        fieldset {
+            width: 500px;
+        }
+
+        &-titulo {
+            margin: 10px;
+        }
+
+        &-contenido-texto {
+            margin: 20px 0;
+            font-size: 1.5rem;
+
+            input {
+                padding: 10px;
+                font-size: 1.1rem;
+                border-radius: 10px;
+                outline: none;
+                /*le quito el recuadro por defecto para colocarle uno personalizado*/
+                border: 2px solid goldenrod;
+
+                &:focus {
+                    border: 3px solid rgb(5, 250, 5);
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+    &-legend {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 3rem;
+        color: $fontYellow;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: black;
+    margin: 10px;
+}

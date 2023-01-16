@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+header {
+    background-color: black;
+}
+
+.encabezado {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.encabezado__lista {
+    margin-bottom: 0px;
+}
+
+.encabezado__lista li:hover {
+    transform: translateY(-10PX);
+    /*al pasar con el cursor por encima se desplaza 10px hacia arriba (-Y)*/
+}
+
+.encabezado__logo {
+    width: 100px;
+    /*ancho de la imagen del nav */
+    height: 100px;
+    /*altura de la imagen del nav */
+    animation: ease-in agrandar 0.5s;
+}
+
+@keyframes agrandar {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.encabezado__logo:hover {
+    transform: scale(1.2);
+    /*al pasar con el cursor por encima se agranda*/
+}
+
+.encabezado__logo-arte {
+    width: 200px;
+    /*ancho de la imagen del nav */
+    height: 100px;
+    /*altura de la imagen del nav */
+    animation: ease-in agrandar 0.5s;
+}
+
+@keyframes agrandar {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.encabezado__logo-arte:hover {
+    transform: scale(1.1);
+    /*al pasar con el cursor por encima se agranda*/
+}
+
+ul li {
+    list-style: none;
+    /*Le quita los puntos de adelante a la lista*/
+    font-size: 1.3rem;
+    margin: 0px 10px;
+    /*posiscion de las latras en el nav*/
+    font-family: 'Yantramanav', sans-serif;
+    /*tipo de letra del nav, la fuente esta en el head*/
+}
+
+.navbar {
+    width: 100%;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link-tienda {
+    color: goldenrod;
+}
+
+.nav-link-tienda:hover {
+    color: goldenrod;
+}
+
+.nav-item {
+    font-family: 'Yantramanav', sans-serif;
+    /*tipo de letra del nav, la fuente esta en el head*/
+    font-weight: bold
+}
+
+.nav-link:hover {
+    color: white;
+    transform: translateY(-10PX);
+    /*al pasar con el cursor por encima se desplaza 10px hacia arriba (-Y)*/
+}
+
+
+
+.navbar-collapse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+body {
+    background-color: rgb(77, 75, 75);
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: goldenrod;
+    margin: 20px 0;
+}
+
+/*footer*/
+footer {
+    background-color: black;
+    color: white;
+    margin: 20px 0px 0px 10px;
+    padding: 20px;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+ul {
+    display: flex;
+    /*le aplico flex para que convierta a las palabras en bloque y las acomode horizontal*/
+}
+
+ul li a {
+    text-decoration: none;
+    /*le quita el subrayado a los link*/
+    color: white;
+    /*color de las letras del nav*/
+}
+
+.piePagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.bi:hover {
+    color: goldenrod;
+    /*al pasar con el cursor por encima se pone de color amarillo*/
+}
+
+/*inicio*/
+.inicio-img img {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    width: 90%;
+    height: 90%;
+    padding: 10PX;
+    margin: 10px auto;
+}
+
+.inicio-video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+.inicio-video-contenido {
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+/*eventos*/
+.eventos__contenido {
+    display: flex;
+    flex-wrap: wrap;
+    /*ajusta el contenido a tamaño de la pantalla*/
+    justify-content: center;
+    /*alinea el contenido en el centro*/
+}
+
+.eventos__contenido img {
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+}
+
+/*galeria*/
+.galeria__contenido {
+    background-color: #929191;
+}
+
+.galeria__contenido-imagenes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeria__contenido-imagenes img {
+    width: 100%;
+    height: 100%;
+}
+
+.galeria__contenido-imagenes img:hover {
+    transform: scale(1.1);
+    /*al pasar con el cursor por encima se agranda*/
+}
+
+.galeria-texto {
+    color: white;
+    background: black;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+/*contacto*/
+form {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto-formulario {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.contacto-formulario fieldset {
+    width: 500px;
+    border-radius: 5px;
+}
+
+.contacto-legend {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: goldenrod;
+}
+
+.contacto__formulario-titulo {
+    margin: 10px;
+}
+
+.contacto__formulario-contenido-texto {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.contacto__formulario-contenido-texto input {
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    outline: none;
+    /*le quito el recuadro por defecto para colocarle uno personalizado*/
+    border: 2px solid goldenrod;
+}
+
+.contacto__formulario-contenido-texto input:focus {
+    border: 3px solid rgb(5, 250, 5);
+    width: 300px;
+}
+
+.contacto__formulario-contenido-texto button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: black;
+    margin: 10px;
+}
+
+/*tienda*/
+.producto__contenido-tarjeta {
+    background-color: rgb(230, 225, 225);
+    border-radius: 10px;
+    padding: 20px;
+    height: 650px;
+    width: 400px;
+}
+
+.tarjeta__contenido-imagen {
+    height: 200px;
+    width: 200px;
+}
+
+.tatjeta__enlace {
+    text-decoration: none;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.5rem;
+    background-color: goldenrod;
+    display: block;
+    /*lo convierte en linea para ocupar todo el espacio de su contenedor */
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 0;
+    bottom: 0;
+}
+
+.tarjeta_contenido-descripcion {
+    margin-bottom: 5px;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.tarjeta__contenido-imagen {
+    /* width: 100%; */
+    border-radius: 100px;
+}
+
+.tarjeta {
+    position: relative;
+    /*posicionado desde el contenedor padre. se aplica al padre*/
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta__contenido-titulo {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.5rem;
+    background-color: #14B76E;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    /*posiciona desde el contenedor hijo. se aplica al hijo*/
+    right: 0;
+    /*posicionado a la derecha. Tambien se puede colocar arriba:top, abajo:bottom o izquierda:left*/
+}
+
+.producto__contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+    gap: 20px;
+}
+
+.bi-whatsapp {
+    position: fixed;
+    /*posiciona al elemento dentro del viewport*/
+    height: 50px;
+    width: 50px;
+    bottom: 45px;
+    right: 30px;
+    background-color: #0df053;
+    color: #ffff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.bi-whatsapp:hover {
+    background-color: #ffff;
+    color: #0df053;
+}
+
+/* los media quieries van siempre al final de CSS */
+/*si trabajamos como mobile last el media queries que se una es max-width*/
+/*los media quieries se trabajan de mayor a menor en mobile last*/
+
+@media only screen and (max-width:576px) {
+
+    /*header*/
+    .encabezado {
+        flex-direction: column;
+        /*acomoda el columna para que queda uno debajo del otro*/
+    }
+
+    .encabezado__logo {
+        height: 150px;
+        width: 150px;
+    }
+
+    ul li {
+        font-size: 1.3rem;
+    }
+
+    /*footer*/
+    .piePagina {
+        justify-content: center;
+        /*para que quede centrado*/
+    }
+
+    /*inicio*/
+    .inicio-video {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .inicio-video-contenido iframe {
+        padding: 0 20px;
+    }
+
+    /*eventos*/
+    .eventos__contenido img {
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+    }
+
+    /*galeria*/
+    .galeria__contenido-imagenes {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        padding: 20px 20px;
+    }
+
+    /*tienda*/
+    .producto__contenido {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .whatsapp {
+        bottom: 45px;
+        right: 20px;
+    }
+}
